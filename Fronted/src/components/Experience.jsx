@@ -1,5 +1,4 @@
-import React from 'react';
-import { Users, Calendar, Award, Code } from 'lucide-react';
+import { Users, Calendar, Code } from 'lucide-react';
 
 const Experience = () => {
   return (

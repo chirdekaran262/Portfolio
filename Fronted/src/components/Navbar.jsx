@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Download } from 'lucide-react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +23,7 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
               <a
                 key={item}
@@ -33,6 +33,15 @@ const Navbar = () => {
                 {item}
               </a>
             ))}
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-teal-500 to-amber-500 text-white rounded-lg hover:from-teal-600 hover:to-amber-600 transition-all"
+            >
+              <Download size={16} />
+              Resume
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -54,6 +63,16 @@ const Navbar = () => {
                 {item}
               </a>
             ))}
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setIsOpen(false)}
+              className="flex items-center gap-2 py-2 px-3 bg-gradient-to-r from-teal-500 to-amber-500 text-white rounded hover:from-teal-600 hover:to-amber-600 transition-all"
+            >
+              <Download size={16} />
+              Resume
+            </a>
           </div>
         )}
       </div>

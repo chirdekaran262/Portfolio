@@ -1,5 +1,5 @@
 import React from 'react';
-import { GraduationCap, Briefcase, MapPin, Mail, Award, Code, Zap, Target, CheckCircle } from 'lucide-react';
+import { GraduationCap, Briefcase, MapPin, Mail, Award, Code, Zap, Target, CheckCircle, Users, DollarSign } from 'lucide-react';
 
 const About = () => {
   return (
@@ -41,37 +41,29 @@ const About = () => {
             </div>
           </div>
 
-          {/* Additional Info Cards */}
-          <div className="bg-gradient-to-br from-teal-500/10 to-teal-600/5 p-4 rounded-lg border border-teal-400/30 hover:border-teal-400/60 transition">
-            <div className="flex items-center gap-3 mb-2">
-              <Code size={18} className="text-teal-300" />
-              <p className="text-sm text-gray-300">Coding Style</p>
-            </div>
-            <p className="text-sm font-medium text-gray-200">Clean Code & SOLID Principles</p>
-          </div>
-
-          <div className="bg-gradient-to-br from-emerald-500/10 to-emerald-600/5 p-4 rounded-lg border border-emerald-400/30 hover:border-emerald-400/60 transition">
-            <div className="flex items-center gap-3 mb-2">
-              <CheckCircle size={18} className="text-emerald-300" />
-              <p className="text-sm text-gray-300">Education Status</p>
-            </div>
-            <p className="text-sm font-medium text-emerald-200">✓ Passed Out - May 2025</p>
-          </div>
-
+          {/* Status Cards */}
           <div className="bg-gradient-to-br from-amber-500/10 to-amber-600/5 p-4 rounded-lg border border-amber-400/30 hover:border-amber-400/60 transition">
             <div className="flex items-center gap-3 mb-2">
               <Zap size={18} className="text-amber-300" />
               <p className="text-sm text-gray-300">Work Status</p>
             </div>
-            <p className="text-sm font-medium text-gray-200">Actively Seeking Opportunities</p>
+            <p className="text-sm font-medium text-green-300">🟢 Open to Work</p>
           </div>
 
-          <div className="bg-gradient-to-br from-fuchsia-500/10 to-fuchsia-600/5 p-4 rounded-lg border border-fuchsia-400/30 hover:border-fuchsia-400/60 transition">
+          <div className="bg-gradient-to-br from-blue-500/10 to-blue-600/5 p-4 rounded-lg border border-blue-400/30 hover:border-blue-400/60 transition">
             <div className="flex items-center gap-3 mb-2">
-              <Target size={18} className="text-fuchsia-300" />
-              <p className="text-sm text-gray-300">Primary Focus</p>
+              <Users size={18} className="text-blue-300" />
+              <p className="text-sm text-gray-300">Freelance</p>
             </div>
-            <p className="text-sm font-medium text-gray-200">Backend & Database Design</p>
+            <p className="text-sm font-medium text-blue-200">Available for Projects</p>
+          </div>
+
+          <div className="bg-gradient-to-br from-green-500/10 to-green-600/5 p-4 rounded-lg border border-green-400/30 hover:border-green-400/60 transition">
+            <div className="flex items-center gap-3 mb-2">
+              <DollarSign size={18} className="text-green-300" />
+              <p className="text-sm text-gray-300">Project Sales</p>
+            </div>
+            <p className="text-sm font-medium text-green-200">Custom Solutions Available</p>
           </div>
         </div>
 
@@ -146,7 +138,9 @@ const About = () => {
         <p className="text-sm text-gray-300 leading-relaxed">
           B.Tech Computer Science graduate (Passed Out - May 2025) specializing in backend development and database systems, with proven experience in building scalable and efficient web applications.
           Proficient in Java, Spring Boot, REST API, and MySQL, with additional exposure to PostgreSQL, Docker, and Git for version control.
-          Strong foundation in object-oriented programming and a growing interest in applying machine learning within backend architectures. Ready to transition to a full-time role and make a significant impact in the tech industry.
+          <span className="text-green-300 font-medium"> Currently open to work for full-time positions and freelance opportunities.</span>
+          Strong foundation in object-oriented programming and a growing interest in applying machine learning within backend architectures.
+          <span className="text-blue-300 font-medium">Available for custom project development and technical consulting.</span>
         </p>
       </div>
     </section>

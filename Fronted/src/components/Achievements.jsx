@@ -1,4 +1,3 @@
-import React from 'react';
 import { Trophy, Code } from 'lucide-react';
 
 const Achievements = ({ leetCodeUrl = 'https://leetcode.com/chirde_karan_262', gfgUrl = '#' }) => {

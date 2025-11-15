@@ -1,5 +1,4 @@
-import React from 'react';
-import { GraduationCap, Briefcase, MapPin, Mail, Award, Code, Zap, Target, CheckCircle, Users, DollarSign } from 'lucide-react';
+import { GraduationCap, Briefcase, MapPin, Mail, Award, Zap, CheckCircle, Users, DollarSign } from 'lucide-react';
 
 const About = () => {
   return (

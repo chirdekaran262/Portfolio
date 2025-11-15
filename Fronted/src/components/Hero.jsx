@@ -1,4 +1,3 @@
-import React from 'react';
 import { Github, Linkedin, Mail, Twitter, Instagram, Code2, ArrowRight, CheckCircle } from 'lucide-react';
 
 const Hero = () => {
